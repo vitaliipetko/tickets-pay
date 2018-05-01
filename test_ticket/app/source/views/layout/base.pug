@@ -1,0 +1,20 @@
+include ../config
+block config
+
+doctype html
+html(lang= lang)
+
+	include head
+
+	body(data= data)
+		//- include sitemap
+		
+		include header
+
+		block content
+
+		include footer
+
+		script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+		script(src="assets/js/main.min.js")
+		script(src="assets/js/mask.min.js")

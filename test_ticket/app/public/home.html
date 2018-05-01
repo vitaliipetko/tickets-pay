@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Site title - Main page</title>
+    <meta name="author" content="Vitalii Petko">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Awesome site">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+  </head>
+  <body>
+    <section class="pay">
+      <div class="container">
+        <div class="pay__data">
+          <input id="name" type="text" placeholder="Фамилия и Имя">
+          <input id="email" type="email" placeholder="E-mail">
+          <input id="tel" type="tel" placeholder="+38(0__)___-__-__">
+          <input id="price" type="hidden" value="300">
+          <form class="pay__form" action="https://www.liqpay.ua/api/3/checkout" method="POST">
+            <input id="data" type="hidden" name="data" value="data">
+            <input id="signature" type="hidden" name="signature" value="signature">
+            <input id="pay__submit" type="submit" value="Pay">
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/mask.min.js"></script>
+  </body>
+</html>

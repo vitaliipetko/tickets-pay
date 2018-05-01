@@ -1,0 +1,11 @@
+section.pay
+	.container
+		.pay__data
+			input#name(type="text" placeholder="Фамилия и Имя")
+			input#email(type="email" placeholder="E-mail")
+			input#tel(type="tel" placeholder="+38(0__)___-__-__")
+			input#price(type="hidden" value="300")
+			form.pay__form(action="https://www.liqpay.ua/api/3/checkout" method="POST")
+				input#data(type="hidden" name="data" value="data")
+				input#signature(type="hidden" name="signature" value="signature")
+				input#pay__submit(type="submit" value="Pay")

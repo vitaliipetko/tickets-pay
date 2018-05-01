@@ -1,0 +1,41 @@
+body
+	background: $white
+	font-family: $default-f
+	font-size: $default-fs
+	line-height: $default-lh
+	position: relative
+	width: 100%
+	-webkit-tap-highlight-color: transparent
+main
+	display: block
+	box-sizing: border-box
+a
+	text-decoration: none
+	transition: all .4s
+img
+	max-width: 100%
+	display: block
+input[type="submit"]
+	@extend .transition
+input, textarea, select
+  outline: none
+  appearance: none
+
+// Default elements for extend
+.inline-block
+	display: inline-block
+	vertical-align: top
+.transition
+	+transition(all .4s)
+
+.source
+	position: fixed
+	left: 20px
+	bottom: 20px
+	padding: 5px 10px
+	background-color: rgba(#000, .7)
+	font-weight: 700
+	text-transform: uppercase
+	color: #fff
+	font-size: 12px
+	border-radius: 10px
